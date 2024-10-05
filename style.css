@@ -1,0 +1,584 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigationlist li{
+    display: inline;
+    padding: 24px;
+    cursor: pointer;
+    font-size: large;
+}
+li:hover{
+    color: rgb(6, 134, 76);
+}
+.navigationlist{
+    margin: 30px;
+    
+}
+.navigationbar hr{
+    height: 30px;
+    margin: 20px;
+}
+.navigationbar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 3;
+
+}
+.navigationbar h2 .fa-compass{
+    color: #f00;
+    font-size: 35px;
+    margin-top:18px;
+    margin-left: 9px;
+}
+.place{
+    display: inline-block;
+    position: relative;
+}
+ .place .list-place{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+.place:hover .list-place{
+    display: block;
+}
+.list-place a{
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+
+}
+.blog{
+    position: relative;
+    display: inline-block;
+
+}
+.blog .list-blog{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 20px;
+}
+.blog:hover .list-blog{
+    display: block;
+}
+.list-blog a{
+    display: block;
+    text-decoration: none;
+    width: 120px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+}
+/* div 2 in navigation bar */
+.navigationbar-2{
+    margin-top:28px;
+
+}
+.navigationbar-2  span{
+    font-size: 15px;
+    
+}
+.navigationbar-2  span h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 5,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* navigation bar div meadia */
+.media{
+    margin:10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.media i{
+    padding: 5px;
+}
+.a{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #f00;
+    height:90px ;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* div image 1 */
+.divimg1{
+    background:no-repeat url("https://th.bing.com/th/id/R.54ebb73152f8a33b3a85495f2e935192?rik=vsbFXpq8Cq5rug&riu=http%3a%2f%2fwww.readersdigest.ca%2fwp-content%2fuploads%2f2016%2f05%2fvisit-london-tower-bridge-12.jpg&ehk=B9C2zZ8cj%2fL5xs0j%2bAy9S2sNxKrBnvkBUt7SM3hXJUw%3d&risl=&pid=ImgRaw&r=0");
+    height:760px;
+    background-size: cover;
+    z-index: -2;
+    text-align: center;
+    padding-top: 140px;
+    
+}
+.divimg1 h1{
+    font-family: 'Satisfy', cursive;
+    font-weight: 40;
+    font-size: 180px;
+    margin: 70px;
+    color: #fff;
+    letter-spacing: 20px;
+
+}
+.divimg1 button{
+    padding: 20px;
+    background-color: rgb(16, 221, 152);
+    border-radius: 6px;
+    color: #fff;
+    height: 60px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    
+
+}
+.divimg1 button:hover{
+    background-color: rgb(198, 34, 34);
+}
+/* div form */
+.divform{
+    height: auto;
+    width: 100;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(19, 19, 54);
+
+}
+.divform h2{
+    display: inline;
+    color: #fff
+
+}
+#input1,#input2,#input3{
+    height: 50px;
+    width: 190px;
+    margin: 25px;
+    background: transparent;
+    text-align: center;
+    border-radius: 10px;
+    color: #c7c2c2;
+    border: 1px solid rgb(249, 243, 238);
+}
+#input1:focus,#input2:focus,#input3:focus{
+    outline: none;
+}
+.divform button{
+    background-color: rgb(201, 5, 5);
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border:none;
+
+
+}
+.place
+{
+    padding-top: 80px;
+    height: 270px;
+    width: 100%;
+    text-align: center;
+
+}
+/* image div */
+.imagediv{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:20px;
+    
+    
+}
+.imagediv img{
+    border-radius: 20px;
+    height: 200px;
+    width: 340px;
+}
+.imagediv h2{
+    display: inline;
+    color:#fff;
+    padding-right: 20px;
+}
+.imagediv button{
+    background-color:rgb(37, 202, 133);
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+.img6, .img5, .img4, .img3, .img2, .img1{
+    height: 200;
+    width: 340px;
+    margin-top: 60px;
+}
+.img1{
+    position: relative;
+}
+/* .img1 .img1-div{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 3;
+} */
+.img2{
+    position: relative;
+}
+/* .img2 .img2-div{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 3;
+} */
+.img3{
+    position: relative;
+}
+/* .img3 .img3-div{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 3;
+    
+} */
+.img4 , .img5, .img6{
+    position: relative;
+}
+/* .img4 .img4-div,.img5 .img5-div, .img6 .img6-div{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+     z-index: 3;
+    
+} */
+.img6:hover,.img5:hover, .img4:hover, .img3:hover, .img2:hover, .img1:hover{
+    margin-top: 50px;  
+}
+
+.img-div{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+     z-index: 3;
+    
+}
+.img-div:hover button{
+    background-color:rgb(198, 52, 52);
+    cursor: pointer;
+
+}
+.img-div:hover h2{
+    color:rgb(198, 52, 52);
+    
+}
+/* div email */
+.div-mail{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+    padding: 100px;
+    background: fixed no-repeat url("https://i.pinimg.com/originals/a4/c6/58/a4c658b4ad31f40ba534d359d06f4ce2.jpg");
+    background-size: cover;
+    
+}
+.div-mail .div-mail-1{
+    text-align: left;
+    height: 100px;
+    width: 300px;
+    
+}
+.div-mail-1 h2{
+    padding-bottom: 15px;
+}
+
+.div-mail input{
+    height: 50px;
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.div-mail button{
+    margin-left: 30px;
+    height:50px ;
+    width:130px ;
+    border-radius: 10px;
+    background-color: rgb(198, 52, 52);
+}
+/* popularplace */
+.popular{
+    margin-top:100px ;
+    position: relative;
+    height: 200px;
+}
+.popular h1,.popular .p1{
+    text-align: center;
+    
+
+}
+.placeimg{
+    position: relative;
+    /* height: 10; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pimage{
+    position: relative;
+    /* background: scroll no-repeat url("https://img.theculturetrip.com/x/smart/wp-content/uploads/2019/04/california--songquan-deng-shutterstock.jpg") ; */
+     height: 450px;
+    width: 350px;
+    margin-top: 50px;
+}
+.pimage button{
+    background-color: aqua;
+    position: absolute;
+    padding: 10px;
+    height: 30px;
+    width: 60px;
+    margin: 30px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.pimage img{
+    height: 300px;
+    width: 300px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
+}
+.content{
+
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    height:150px ;
+    width:300px;
+    padding: 40px;
+    background-color: #fff;
+    
+}
+.pimage:hover h2{
+    color: rgb(239, 44, 44);
+}
+.pimage:hover button{
+    background-color: rgb(232, 46, 46);
+}
+
+.subdiv-img .btn{
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    background-color: #e13030;
+    justify-content: center;
+    margin: 20px auto;
+   
+
+}
+.subdiv-img{
+    background-color: #faf6f6;
+    display: flex;
+    flex-direction: column;
+
+}
+.divicon{
+    display: flex;
+    height: 400px;
+}
+.train, .hotel, .glob{
+    text-align: center;
+    padding: 20px;
+}
+.train .fa-train{
+    color: #f00;
+    font-size: 50px;
+    padding: 24px;
+    
+
+}
+.hotel .fa-hotel{
+    color: #f00;
+    font-size: 50px;
+    padding: 24px;
+}
+.glob .fa-earth-asia{
+    color: #f00;
+    font-size: 50px;
+    padding:24px;
+}
+.main-tom{
+    height: 400px;
+    text-align: center;
+}
+.main-tom p{
+    margin: 50px;
+}
+.main-tom h2{
+    color: #c7c2c2;
+    margin: 30px;
+}
+.tom{
+    /* text-align: center; */
+    height: 120px;
+    position: relative;
+    width: 150px;
+    margin: auto;
+}
+.tom img{
+    height: 120px;
+    width: 150px;
+    border-radius: 50%;
+}
+.qot{
+    position: absolute;
+    background-color: rgb(17, 185, 112);
+    color:#fff;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    right: -20px;
+    bottom:10px ;
+}
+.trip{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tripimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.tripimage:hover h2{
+    color: #e13030;
+}
+.tripimage{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    
+    
+}
+.tripimage img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+.tripcont{
+    height:150px ;
+    width: 400px;
+
+
+}
+.footer-main{
+    background-color: rgb(4, 4, 66);
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.travel{
+    color: #fff;
+    padding: 50px;
+}
+.travel ul{
+    list-style: none;
+}
+.dest{
+    display: flex;
+}
+.dest div{
+    margin: 20px;
+}
+.travel h2{
+    margin-bottom: 10px;
+}
+.travel li{
+    padding: 10px;
+}
+.travel i{
+    margin-top: 30px;
+    padding: 10px;
+}
+.travel .fa-compass{
+    color: #f00;
+    font-size: 35px;
+    margin-top:18px;
+    margin-left: 0px;
+}
+.insta{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.instaimg img{
+    height: 70px;
+    width: 90px;
+    border-radius: 10px;
+}
+.instamain{
+    display: flex;
+    flex-direction: column;
+    /* height: 100px; */
+    width: 350px;
+}
+.heading{
+    justify-content: left;
+    margin: 40px;
+    color: #fff;
+}
+.footer-main hr{
+
+    color: #fff;
+    margin-top: 100px;
+}
+.footer-main .copy{
+    color: #fff;
+    margin: auto;
+    margin-bottom: 60px;
+}
+span{
+    color: #e13030;
+}
